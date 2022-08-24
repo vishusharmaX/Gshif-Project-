@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+
+  .menu {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+  }
+
+  .menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+
+  .menu-item {
+    display: flex;
+  }
+
+  .menu-item-image {
+    width: 300px;
+    height: 250px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+  }
+
+  .menu-item-text {
+    flex-grow: 1;
+  }
+
+  .menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .menu-item-name {
+    margin-right: 1.5em;
+  }
+
+  .menu-item-description {
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 992px) {
+    .menu {
+      font-size: 16px;
+    }
+
+    .menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-image {
+      width: 200px;
+      height: 200px;
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="menu">
+      <h2 class="menu-group-heading">
+        South-Indain Food
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.thespruceeats.com/thmb/A_g1pdGtPZBJyJ9ycu18iDzegL4=/1887x1415/smart/filters:no_upscale()/idli-56a510b63df78cf772862c34.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Idli</span>
+              <span class="menu-item-price">250 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Idli is a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods
+              in
+              Eastern and Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting of
+              fermented black lentils (de-husked) and rice.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://maayeka.com/wp-content/uploads/2014/08/masala-dosa-recipe.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Dosa</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              A dosa is a thin batter-based pancake originating from South India, made from a fermented batter
+              predominantly consisting of lentils and rice. Its main ingredients are rice and black gram, ground
+              together in a fine, smooth batter with a dash of salt, then fermented.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://i.ndtvimg.com/i/2017-08/chicken-chettinad_620x330_71504097664.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chicken Chettinad</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Full of flavour and bold masalas, this dish will floor your family and guests. A gorgeous melange of
+              onions, tomatoes, cinnamon sticks, cloves, cumin, curry leaves and a rich coconut-y paste.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://i.ndtvimg.com/i/2017-08/andhra-chicken-curry_620x330_41504097796.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Andhra Style Chicken Curry</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              A fiery Andhra curry cooked with ginger-garlic paste, curry leaves, cinnamon, chicken masala and a
+              delectable cashew and poppy seed paste.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://i.ndtvimg.com/i/2015-06/sambhar_625x350_71434960456.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Pickles and Pappadams </span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Pickles and Pappadams are always served on the side and yogurt makes a frequent appearance as well.
+              Coconut is one of the most important ingredients and is used in various forms: dry, desiccated or as is.
+              Some of the cooking is also done in coconut oil. The South of India is known as 'the land of spices' and
+              for all the right reasons.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://i.ndtvimg.com/i/2017-03/kadala-curry_620x350_51490966850.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Kerala fish curry</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Kerala fish curry, pomfret moilee, soft and fluffy appams with stew, Puttu and Kadala curry, Kerala beef
+              fry, chemmeen theeyal (prawn curry) - the food from Kerala isn't heavily spiced but the cooking techniques
+              used makes is absolutely ingenious.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="menu-group-heading">
+        Dessert
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://realfood.tesco.com/media/images/RFO-1400x919-classic-chocolate-mousse-69ef9c9c-5bfb-4750-80e1-31aafbd80821-0-1400x919.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chocolate Icecream</span>
+              <span class="menu-item-price">200 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Chocolate ice cream is a flavour of ice cream which is the second most common flavour of ice cream, after
+              vanilla. Chocolate ice cream is made by blending in cocoa powder in along with the eggs (optional), cream,
+              vanilla and sugar used to make ice cream. The cocoa powder gives the ice cream a brown colour.
+
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://eatlittlebird.com/wp-content/uploads/2020/03/angel-food-cake-7.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Angel Cake</span>
+              <span class="menu-item-price">400 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Angle cake is also is an incredible source of energy. Ice cream is rich with carbohydrates, fats, and
+              proteins, which are all, needed for our bodies to produce energy.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://thescranline.com/wp-content/uploads/2021/09/Lamington-Cake-01-500x500.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Lamington Cake</span>
+              <span class="menu-item-price">400 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              lamington was named for Lord Lamington, who served as Governor of Queensland from 1896 to 1901, or perhaps
+              his wife, Lady Lamington.Its is a tasty icecream.
+
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://img.jakpost.net/c/2020/10/02/2020_10_02_105218_1601621041._large.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Moon Cake</span>
+              <span class="menu-item-price">300 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              A full moon symbolizes prosperity and reunion for the whole family. Round mooncakes complement the harvest
+              moon in the night sky at the Mid-Autumn Festival. The mooncake is not just a food.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://i0.wp.com/gurgaonbakers.com/wp-content/uploads/2020/10/delectable-fresh-fruit-cake.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Fruit Cake</span>
+              <span class="menu-item-price">350 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Fruitcake (or fruit cake or fruit bread) is a cake made with candied or dried fruit, nuts, and spices, and
+              optionally soaked in spirits. In the United Kingdom, certain rich versions may be iced and decorated.
+              Fruitcakes are typically served in celebration of weddings and Christmas.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://insanelygoodrecipes.com/wp-content/uploads/2021/10/Homemade-Halloween-Cake-with-Pumpkin-and-Bat-Decorations.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Halloween Cake</span>
+              <span class="menu-item-price">400 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Both ice cream and cake have sugar and dairy in them. But cake additionally has frosting. Frosting
+              contains a high fat and sugar content. So, the same serving of ice cream and cake may vary a lot in
+              nutritional value.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
